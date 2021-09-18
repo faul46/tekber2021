@@ -1,9 +1,33 @@
+<<<<<<< HEAD
+import 'dart:developer';
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  var fontbaru = "banksb20";
+
+  void perubahan() {
+    log("tombol ditekan");
+    setState(() {
+      this.fontbaru = "leadcoat";
+    });
+  }
+
+  @override
+=======
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
+>>>>>>> origin/master
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[50],
@@ -25,10 +49,19 @@ class HomePage extends StatelessWidget {
             width: 200,
             child: Column(
               children: [
+<<<<<<< HEAD
+                Text(
+                  "MySisfo",
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 40, fontFamily: fontbaru),
+                ),
+=======
                 Text("MySisfo",
                     softWrap: true,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 40, fontFamily: "banksb20")),
+>>>>>>> origin/master
               ],
             ),
           ),
@@ -48,7 +81,11 @@ class HomePage extends StatelessWidget {
               backgroundColor: Colors.blue,
               primary: Colors.white,
             ),
+<<<<<<< HEAD
+            onPressed: perubahan,
+=======
             onPressed: () => debugPrint("Tombol Ditekan"),
+>>>>>>> origin/master
             child: Text("Masuk"),
           )
         ],

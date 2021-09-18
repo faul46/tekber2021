@@ -65,6 +65,24 @@ flutter:
     - family: banksb20
       fonts:
         - asset: assets/fonts/banksb20.ttf
+<<<<<<< HEAD:mysisfoo/pubspec.yaml
+
+
+    - family: banksb26
+      fonts:
+        - asset: assets/fonts/banksb26.ttf
+
+    - family: COMICATE
+      fonts:
+        - asset: assets/fonts/COMICATE.TTF
+
+    - family: leadcoat
+      fonts:
+        - asset: assets/fonts/leadcoat.ttf
+    
+
+=======
+>>>>>>> origin/master:mysisfo/pubspec.yaml
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
