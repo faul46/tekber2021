@@ -1,14 +1,16 @@
+import 'package:flutter_starter/ui/home_page.dart';
+import 'package:flutter_starter/ui/profil_page.dart';
+import 'package:flutter_starter/widget/navbar.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
-  _LoginFormState createState() => _LoginFormState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginFormState extends State<LoginForm> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,18 +53,24 @@ class _LoginFormState extends State<LoginForm> {
           ),
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 60),
-              child: TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    primary: const Color.fromARGB(255, 0, 0, 0),
-                    backgroundColor: Colors.blue,
+              child: InkWell(
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) {
+                  return const MyBotNavbar();
+                })),
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(41, 125, 186, 0.52),
+                    borderRadius: BorderRadius.circular(16),
                   ),
                   child: const Center(
-                    child: Text(
-                      'SIGN IN ',
-                      style: TextStyle(fontSize: 18),
-                    ),
-                  )))
+                      child: Text(
+                    'SIGN IN ',
+                    style: TextStyle(fontSize: 18),
+                  )),
+                ),
+              ))
         ]),
       ),
     );

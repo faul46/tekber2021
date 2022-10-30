@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Jadwal extends StatelessWidget {
-  Jadwal({super.key, required this.title});
+class ListTemanPage extends StatelessWidget {
+  ListTemanPage({super.key, required this.title});
 
   final List bulan = [
     "Budi",
